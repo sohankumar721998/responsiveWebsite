@@ -1,0 +1,323 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Nav Section With HERO */
+.main-head {
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+  }
+  nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: space-around;
+    list-style: none;
+  }
+  #logo {
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+  /* animation: cloudAnimation 2s infinite alternate 2s; */
+}
+button:hover {
+  background: #0f4674;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/images/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h30 {
+  padding: 5rem;
+}
+
+/* BENEFITS SECTION */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(129, 239, 243, 0.5), transparent),
+    url("/images/austin-neill-jB8WaHvHmoY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.4rem;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  /* background: linear-gradient(#0c4749, #460303);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* animation: cloudAnimation 2s infinite alternate 2s; */
+}
+.moving-cloud-1 {
+    animation: cloudAnimation 6s infinite alternate ;
+  ease-in-out;
+  opacity: 0.8;
+}
+.moving-cloud-2 {
+    animation: cloudAnimation 4s infinite alternate ;
+  left: 17%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -50%);
+  }
+  to {
+    transform: 0% 0%;
+  }
+  /* 0% {
+    background: rgba(91, 246, 252, 0.5);
+  }
+  50% {
+    background: #48f6ff80;
+  }
+  100% {
+    background: rgba(13, 69, 71, 0.5);
+  } */
+}
+
+/* BENEFITS SECTION */
+.benefits-head{
+    color: white;
+    background: #131c27;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.benefits-head h3{
+    padding: 2rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh ;
+    align-items: center ;
+    flex-wrap: wrap ;
+}
+
+
+.card{
+    
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.cards img{
+    
+    max-width: 15%;
+    margin: 2rem ;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: brightness(0) invert(1);
+
+}
+
+.card h4,p{
+    padding: 1rem;
+}
+
+.card-icon{
+    background-color: rgb(15, 70, 116);
+}
+
+#contact{
+    min-height:100vh ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url(/images/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper{
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+.name-form, .email-form{
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+    padding: 1rem ;
+}
+footer{
+    color: white;
+    background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+}
+.footer-wrapper ul img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: brightness(0) invert(1);
+
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center ;
+
+}
+
+/* MEDIA query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud{
+      height: 20rem;
+      pointer-events: none;
+  }
+  /* .moving-cloud-1{
+      z-index: -1;
+  }
+  .moving-cloud-2{
+      z-index: -2;
+  } */
+  /* .locations-head h3{
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+  } */
+  .form-wrapper{
+      width: 100%;
+  }
+  footer{
+      text-align: center;
+  }
+  footer h5{
+      padding-bottom: 3rem;
+  }
+}
