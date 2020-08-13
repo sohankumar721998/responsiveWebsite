@@ -289,7 +289,7 @@ footer ul{
 /* MEDIA query */
 @media screen and (max-width: 932px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
   nav {
     text-align: center;
